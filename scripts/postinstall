@@ -19,8 +19,8 @@ if [ "${WIRELESSHARDWAREDEVICE}" == "" ] ; then
 fi
 
 # Switch off the airport
-"${NETWORKSETUPCOMMAND}" -setairportpower en1 off
-if [ $? != 0 ] ; then
+"${NETWORKSETUPCOMMAND}" -setairportpower en1 on
+if [ $? != 1 ] ; then
 	exit -1
 fi
 
